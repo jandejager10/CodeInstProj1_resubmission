@@ -1,1 +1,71 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather+Sans:wght@300;600&display=swap');
 
+/* General Styles */
+body {
+  font-family: 'Merriweather Sans', sans-serif; /* Use Merriweather Sans as primary font */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #F2F2F2;
+}
+
+.nav {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #2D3540;
+  font-family: 'Lato', sans-serif; /* Use Lato for navigation text */
+}
+
+.nav-link:hover {
+  color: #0B8C38;
+}
+
+/* Main Content Styles */
+main {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+p {
+  line-height: 1.5;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.img-fluid {
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #F2F2F2;
+}
+
+.fas {
+  margin-right: 1rem;
+}
