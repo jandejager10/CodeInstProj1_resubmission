@@ -1,6 +1,9 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather+Sans:wght@300;600&display=swap');
+
 /* General Styles */
 body {
-  font-family: sans-serif;
+  font-family: 'Merriweather Sans', sans-serif; /* Use Merriweather Sans as primary font */
   margin: 0;
   padding: 0;
 }
