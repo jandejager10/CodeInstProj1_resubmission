@@ -16,4 +16,90 @@
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
+  <header>
+    </header>
+
+  <main class="container">
+
+    <section class="hero mb-5">
+      </section>
+
+    <h2>Class Schedule - Get Fit, Have Fun!</h2>
+    <p>We offer a wide variety of fitness classes to suit all levels and interests. Whether you're looking for a high-energy cardio workout, a strength-building session, or a relaxing yoga class, we have something for you!</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Gym Facilities</h3>
+        <ul>
+          <li>250+ Machines</li>
+          <li>100+ Classes a Month</li>
+          <li>Large Free Weights Zone</li>
+          <li>Bootcamps, Calisthenics & Boxing</li>
+          <li>Sprint/Sled Track</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <h3>Additional Features</h3>
+        <ul>
+          <li>Spacious Changing Rooms</li>
+          <li>Personal Trainers</li>
+          <li>Great Location & Free Parking</li>
+          <li>Ladies Only Gym (if applicable)</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2 class="text-center mt-5">FITNESS CLASSES</h2>
+    <p class="text-center">
+      Your membership gives you access to all of our amazing classes, including Cardio, Spin, Strength, and Yoga!
+    </p>
+    <p class="text-center">There is something for everyone, so you can try as many as you like! No need to book, just show up and get ready to sweat. Get serious about your fitness goals with Code Gym classes today!</p>
+    <p class="text-center text-muted">Timetable subject to change. For the most up-to-date version, please check the Code Gym website.</p>
+
+    <div class="text-center mb-5">
+      <button class="btn btn-primary" id="showTimetable">Show Timetable</button>
+    </div>
+
+    <div id="timetable" style="display: none;">
+      <h2>Class Timetable</h2>
+      <p>This is a timetable to give you an idea of the variety of classes we offer. Please refer to the Code Gym website or app for the most up-to-date timetable.</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+            <th>Evening</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Spin (9am), Yoga (10am)</td>
+            <td>Strength Training (1pm), Bootcamp (2pm)</td>
+            <td>Cardio Blast (6pm), Boxing (7pm)</td>
+          </tr>
+          </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <footer>
+    </footer>
+
+  <script>
+    const showTimetableButton = document.getElementById('showTimetable');
+    const timetable = document.getElementById('timetable');
+
+    showTimetableButton.addEventListener('click', () => {
+      timetable.style.display = timetable.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>
