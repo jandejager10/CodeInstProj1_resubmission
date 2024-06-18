@@ -33,35 +33,37 @@ Deployment:
 The final version of the project will be deployed to a hosting platform like GitHub Pages.
 
 Gym Website Project - Test Plan
-Testing Objectives:
-Ensure the website displays correctly on various devices (mobile, tablet, desktop).
-Verify all navigation links function properly and direct users to the intended pages or sections.
-Confirm all images and media content load without errors.
-Validate the accuracy of displayed information, including class schedules, location details, and contact information.
-Test form functionality (if applicable) for capturing user inquiries or feedback.
-Assess website responsiveness to user interactions (e.g., button clicks, menu selections).
+**Testing Tools:**
 
-Testing Scope:
-Functionality Testing: Verify all website features work as intended.
-Usability Testing: Evaluate user experience and ease of navigation.
-Accessibility Testing: Ensure the website is accessible to users with disabilities.
-Browser Compatibility Testing: Confirm proper display across different web browsers.
+* Manual testing will be conducted using various web browsers on different devices (desktop, mobile) to ensure cross-browser compatibility.
 
-Testing Procedures:
-Manual Testing:
-Use different devices to check responsiveness and layout.
-Click through all navigation links and verify their destinations.
-Test the functionality of any forms or interactive elements.
-Confirm the accuracy of displayed content (class schedules, location, contact details).
-Review the website for clarity, visual consistency, and overall user-friendliness.
+**Test Cases:**
 
-The website should display correctly across all targeted devices.
-All navigation links should lead to the intended pages or sections without errors.
-Images and media content should load successfully.
-Displayed information (schedules, location, etc.) should be accurate and up-to-date.
-Forms (if applicable) should function correctly and capture user input.
-User interactions (clicks, selections) should trigger the desired response.
-The website should be user-friendly, accessible, and visually appealing.
+**1. Functionality:**
+
+| Test Case ID | Description | Expected Result | Pass/Fail | Comments |
+|---|---|---|---|---|
+| TC-01 | Access the home page (index.html) | The home page should load successfully and display the gym's name ("Code Gym"). | Pass/Fail | Verify basic functionality and content. |
+| TC-02 | Navigate to the "Classes" page (classes.html)  | Clicking the "Classes" navigation link should lead to the classes page. | Pass/Fail | Confirm navigation functionality between pages. |
+| TC-03 | Navigate to the "Contact" page (contact.html) | Clicking the "Contact" navigation link should lead to the contact page. | Pass/Fail | Confirm navigation functionality between pages. |
+| TC-04 | Navigate to the "Gallery" page (gallery.html) | Clicking the "Gallery" navigation link should lead to the gallery page. | Pass/Fail | Confirm navigation functionality between pages. |
+| TC-05 | Submit a contact form | Filling and submitting the contact form should successfully submit the data (without actual functionality of sending emails). | Pass/Fail | Verify form functionality and basic validation (e.g., required fields). |
+| TC-06 | Test broken links | Clicking a broken link should display a user-friendly error page (error.html). | Pass/Fail | Ensure proper handling of non-existent links. |
+
+**2. User Experience:**
+
+| Test Case ID | Description | Expected Result | Pass/Fail | Comments |
+|---|---|---|---|---|
+| TC-07 | Mobile Responsiveness | The website should display correctly and be usable across various screen sizes (desktop, mobile). | Pass/Fail | Verify website layout adapts to different devices. |
+| TC-08 | Page Loading Speed | Pages should load reasonably fast for a good user experience. | Pass/Fail | Perform a basic speed test using online tools (subjective assessment). |
+| TC-09 | Clear Navigation | The navigation menu should be clear and easy to understand, allowing users to find desired information efficiently. | Pass/Fail | Review navigation structure and labeling for clarity. |
+| TC-10 | Image Quality | Images used throughout the website should be high-resolution and visually appealing. | Pass/Fail |  Subjective assessment of image quality and relevance. |
+
+**Pass/Fail Criteria:**
+
+* All test cases must pass for a successful website launch.
+* Any critical bugs or usability issues discovered during testing will require rectification before deployment.
+* Minor visual inconsistencies can be addressed after launch based on priority.
 
 Minor layout inconsistencies or visual adjustments will be documented for future updates.
 
