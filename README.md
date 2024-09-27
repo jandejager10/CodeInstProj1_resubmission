@@ -35,7 +35,7 @@ Version Control:
 The project code is managed using Git and hosted on GitHub.
 
 ## Code Attribution
-- Bootstrap CSS framework (used for grid layout): [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Bootstrap CSS framework (used for grid layout) also because I can't figure out hamburger button without: [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - FontAwesome icons (used for icons like phone and email): [FontAwesome Documentation](https://fontawesome.com/)
 - Hover.css (used for hover effects): [Hover.css Documentation](http://ianlunn.github.io/Hover/)
 - chatgpt.com (used for image creation): [Image creator DALL.E](https://chatgpt.com/)

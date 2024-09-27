@@ -3,14 +3,14 @@
 
 /* General Styles */
 html, body {
-  font-family: 'Merriweather Sans', sans-serif; /* Use Merriweather Sans as primary font */
+  font-family: 'Merriweather Sans', sans-serif; /* Primary font */
+  line-height: 1.5;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
 }
 
 * {
-  font-family: inherit; /* Ensure all elements inherit the font set in body */
+  font-family: inherit; /* Inherit font-family globally */
 }
 
 a {
@@ -19,18 +19,22 @@ a {
 }
 
 .container {
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
 
 /* Header Styles */
 header {
   background-color: #F2F2F2;
+  padding: 1rem;
 }
 
 .nav {
   list-style: none;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-item {
@@ -38,6 +42,7 @@ header {
 }
 
 .nav-link {
+  text-decoration: none;
   color: #2D3540;
   font-family: 'Lato', sans-serif; /* Use Lato for navigation text */
 }
@@ -54,27 +59,17 @@ header {
 
 h2 {
   margin-bottom: 1.5rem;
-  font-family: 'Merriweather Sans', sans-serif;
 }
 
 p {
-  line-height: 1.5;
-  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: 1rem;
 }
 
 .img-fluid {
   border-radius: 5px;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #F2F2F2;
-}
-
-.fas {
-  margin-right: 1rem;
-}
-
+/* Hero Image Section */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-banner.webp');
   height: 100vh;
@@ -82,7 +77,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-bottom: 5rem;
 }
 
 .hero-text {
@@ -93,4 +87,33 @@ footer {
   transform: translate(-50%, -50%);
   color: white;
   z-index: 1;
+}
+
+.hero-text h1, .hero-text h2 {
+  margin: 0; /* Remove margin for heading alignment */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #F2F2F2;
+  padding: 1rem 0;
+}
+
+footer div {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #2D3540;
+}
+
+footer a:hover {
+  color: #0B8C38;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #2D3540;
 }
