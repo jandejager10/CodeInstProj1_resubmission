@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather+Sans:wght@300;600&display=swap');
 
 /* General Styles */
-body {
+html, body {
   font-family: 'Merriweather Sans', sans-serif; /* Use Merriweather Sans as primary font */
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit; /* Ensure all elements inherit the font set in body */
 }
 
 a {
@@ -14,8 +19,8 @@ a {
 }
 
 .container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Header Styles */
@@ -42,9 +47,9 @@ header {
 }
 
 /* Main Content Styles */
-main {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.main-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 h2 {
@@ -77,6 +82,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 5rem;
 }
 
 .hero-text {
