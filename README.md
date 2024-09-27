@@ -38,6 +38,7 @@ The project code is managed using Git and hosted on GitHub.
 - Bootstrap CSS framework (used for grid layout): [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - FontAwesome icons (used for icons like phone and email): [FontAwesome Documentation](https://fontawesome.com/)
 - Hover.css (used for hover effects): [Hover.css Documentation](http://ianlunn.github.io/Hover/)
+- chatgpt.com (used for image creation): [Image creator DALL.E](https://chatgpt.com/)
 
 All other code is custom-written.
 
