@@ -50,20 +50,125 @@
 
   <main class="main-container">
     <div class="hero-image">
-        <div class="hero-text">
-          <h2>Get Fit</h2>
-          <h1 style="font-size:50px">You Can</h1>
-          <h1 style="font-size:50px">& You Will</h1>
-        </div>
+      <div class="hero-text">
+        <h2>Get Fit</h2>
+        <h1 style="font-size:50px">You Can</h1>
+        <h1 style="font-size:50px">& You Will</h1>
+      </div>
     </div>
-
+  
     <div class="row">
       <div class="col">
         <h2>Welcome to Code Gym!</h2>
         <p>A place to achieve your fitness goals in a supportive and motivating environment.</p>
         <p>We offer a wide variety of classes, state-of-the-art equipment, and expert trainers to help you reach your full potential.</p>
-        <a href="#" class="btn btn-primary">Learn More</a>
+        <button id="learnMoreBtn" class="btn btn-primary">Learn More</button>
+        
+        <!-- Hidden content container -->
+        <div id="extraContent" style="display: none; margin-top: 20px;">
+          <!-- Sub-Headers as Accordion -->
+          <div class="accordion" id="learnMoreAccordion">
+            <!-- Booking Classes Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingBookingClasses">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBookingClasses" aria-expanded="true" aria-controls="collapseBookingClasses">
+                  Booking Classes
+                </button>
+              </h2>
+              <div id="collapseBookingClasses" class="accordion-collapse collapse show" aria-labelledby="headingBookingClasses" data-bs-parent="#learnMoreAccordion">
+                <div class="accordion-body">
+                  <p>CODE GYM is famous for running the best and most creative studio timetable in the country. To secure a place on your favourite class we offer advanced booking through the CODE GYM App...</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Day Passes Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingDayPasses">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDayPasses" aria-expanded="false" aria-controls="collapseDayPasses">
+                  Day Passes
+                </button>
+              </h2>
+              <div id="collapseDayPasses" class="accordion-collapse collapse" aria-labelledby="headingDayPasses" data-bs-parent="#learnMoreAccordion">
+                <div class="accordion-body">
+                  <p>Non-members can use CODE GYM on a day pass for a cost of between £20-£25...</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Guest Passes Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingGuestPasses">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGuestPasses" aria-expanded="false" aria-controls="collapseGuestPasses">
+                  Guest Passes
+                </button>
+              </h2>
+              <div id="collapseGuestPasses" class="accordion-collapse collapse" aria-labelledby="headingGuestPasses" data-bs-parent="#learnMoreAccordion">
+                <div class="accordion-body">
+                  <p>All CODE GYM Members receive 5 Guest Passes upon signing up...</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Towels & Lockers Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTowelsLockers">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTowelsLockers" aria-expanded="false" aria-controls="collapseTowelsLockers">
+                  Towels & Lockers
+                </button>
+              </h2>
+              <div id="collapseTowelsLockers" class="accordion-collapse collapse" aria-labelledby="headingTowelsLockers" data-bs-parent="#learnMoreAccordion">
+                <div class="accordion-body">
+                  <p>Towels are available for club users on each visit...</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Membership Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingMembership">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMembership" aria-expanded="false" aria-controls="collapseMembership">
+                  Membership
+                </button>
+              </h2>
+              <div id="collapseMembership" class="accordion-collapse collapse" aria-labelledby="headingMembership" data-bs-parent="#learnMoreAccordion">
+                <div class="accordion-body">
+                  <p>A Member may apply to make changes to their membership at any point...</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Personal Training Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingPersonalTraining">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonalTraining" aria-expanded="false" aria-controls="collapsePersonalTraining">
+                  Personal Training
+                </button>
+              </h2>
+              <div id="collapsePersonalTraining" class="accordion-collapse collapse" aria-labelledby="headingPersonalTraining" data-bs-parent="#learnMoreAccordion">
+                <div class="accordion-body">
+                  <p>CODE GYM provides (very) personal trainers who are independent professionals...</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Opening Times Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOpeningTimes">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOpeningTimes" aria-expanded="false" aria-controls="collapseOpeningTimes">
+                  Opening Times
+                </button>
+              </h2>
+              <div id="collapseOpeningTimes" class="accordion-collapse collapse" aria-labelledby="headingOpeningTimes" data-bs-parent="#learnMoreAccordion">
+                <div class="accordion-body">
+                  <p>For opening times of all CODE GYM clubs, you can find them here by selecting your preferred location...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+  
       <div class="col">
         <img src="assets/images/facility1.webp" alt="Gym Facility Image" class="img-fluid">
       </div>
@@ -93,6 +198,17 @@
     </p>
 </div>
   </footer>
+
+  <script>
+  document.getElementById('learnMoreBtn').addEventListener('click', function() {
+    const extraContent = document.getElementById('extraContent');
+    if (extraContent.style.display === 'none') {
+      extraContent.style.display = 'block';
+    } else {
+      extraContent.style.display = 'none';
+    }
+  });
+  </script>
 
   </body>
 </html>

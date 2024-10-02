@@ -11,6 +11,7 @@ This project builds a static front-end website for a gym using HTML5 and CSS3. T
 - HTML5
 - CSS3
 - Bootstrap (for responsive layout)
+- JavaScript (https://www.w3schools.com/js the only way I could get the Learn More button to work)
 
 ## Features
 - Responsive design for optimal viewing across devices (mobile, tablet, desktop).
@@ -39,6 +40,7 @@ The project code is managed using Git and hosted on GitHub.
 - FontAwesome icons (used for icons like phone and email): [FontAwesome Documentation](https://fontawesome.com/)
 - Hover.css (used for hover effects): [Hover.css Documentation](http://ianlunn.github.io/Hover/)
 - chatgpt.com (used for image creation): [Image creator DALL.E](https://chatgpt.com/)
+- JavaScript: [Event Listener](https://www.w3schools.com/js)
 
 All other code is custom-written.
 
@@ -111,7 +113,7 @@ The CSS code was validated using the [W3C CSS Validation Service (Jigsaw)](https
 Minor layout inconsistencies or visual adjustments will be documented for future updates.
 
 Testing Tools:
-Web Browsers (Chrome, Firefox, Safari, etc.)
+Web Browsers (Chrome, Firefox, Safari)
 Mobile Devices (phones, tablets)
 Testing notes and documentation (screenshots, bug reports)
 
