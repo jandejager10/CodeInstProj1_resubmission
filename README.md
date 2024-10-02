@@ -111,6 +111,7 @@ The CSS code was validated using the [W3C CSS Validation Service (Jigsaw)](https
 Page load times initially quite slow because of images sizes:
 
 ![Lighthouse Validation Screenshot](assets/images/lighthouse_initial1.png)
+  Page load after corrective actions - image is simply to large.
     ![Lighthouse Validation Screenshot](assets/images/lighthouse_corrected1.png)
 ![Lighthouse Validation Screenshot](assets/images/lighthouse_initial2.png)
 ![Lighthouse Validation Screenshot](assets/images/lighthouse_initial3.png)
