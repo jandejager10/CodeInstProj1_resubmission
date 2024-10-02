@@ -74,7 +74,7 @@ Manual testing was performed across multiple devices (desktop, mobile) and web b
 | TC-06 | Test broken links | Clicking a broken link should display a user-friendly error page (error.html). | Pass | Works and show error page after correcting file name. |
 
 Screenshots from testing:
-![Home Page Screenshot](screenshots/homepage.png)
+![Home Page Screenshot](assets/images/homepage.png)
 
 **2. User Experience:**
 
@@ -94,29 +94,32 @@ The HTML code was validated using the [W3C Markup Validation Service](https://va
 
 **Proof of validation**:
 
-![HTML Validation Page1](images/html-validation1.png)
+![HTML Validation Page1](assets/images/html-validation1.png)
 
-![HTML Validation Page2](images/html-validation2.png)
+![HTML Validation Page2](assets/images/html-validation2.png)
 
-![HTML Validation Page3](images/html-validation3.png)
+![HTML Validation Page3](assets/images/html-validation3.png)
 
 ### CSS Validation
 The CSS code was validated using the [W3C CSS Validation Service (Jigsaw)](https://jigsaw.w3.org/css-validator/). The stylesheet passed with no errors or warnings.
 
 **Proof of validation**:
 
-![CSS Validation Screenshot](images/css_validation.png)
+![CSS Validation Screenshot](assets/images/css_validation.png)
 
 ### Lighthouse
 Page load times initially quite slow because of images sizes:
 
-![Lighthouse Validation Screenshot](images/lighthouse_initial1.png)
-    ![Lighthouse Validation Screenshot](images/lighthouse_corrected1.png)
-![Lighthouse Validation Screenshot](images/lighthouse_initial2.png)
-![Lighthouse Validation Screenshot](images/lighthouse_initial3.png)
+![Lighthouse Validation Screenshot](assets/images/lighthouse_initial1.png)
+    ![Lighthouse Validation Screenshot](assets/images/lighthouse_corrected1.png)
+![Lighthouse Validation Screenshot](assets/images/lighthouse_initial2.png)
+![Lighthouse Validation Screenshot](assets/images/lighthouse_initial3.png)
 
 **Correction Actions**
 Added preconnect and dns-prefect to the required origin sites
+Defering image loads on home page
+Performance has increased
+    Other than replacing the images or creating seperate java pages for the scripts (currently inline) there does not seem a way to increase performance on initial load.
 
 
 **Pass/Fail Criteria:**
