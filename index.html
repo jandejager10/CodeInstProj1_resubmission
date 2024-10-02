@@ -7,9 +7,23 @@
   <meta name="keywords" content="Gym, Excercise, Fun, Supportive, Motivating">
   <meta name="author" content="Jan de Jager">
   <title>Code Gym - Your Fitness Destination</title>
+  <!-- Preconnect & dns-prefetch for Bootstrap and other external resources -->
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://kit.fontawesome.com">
+  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  
+  <!-- Preload for images and stylesheets -->
+  <link rel="preload" href="assets/images/hero-banner.webp" as="image">
+  <link rel="preload" href="assets/css/style.css" as="style">
+
+
+  <!-- Stylesheets and Scripts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/919d7ae42a.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://kit.fontawesome.com/919d7ae42a.js" async crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -170,7 +184,7 @@
       </div>
   
       <div class="col">
-        <img src="assets/images/facility1.webp" alt="Gym Facility Image" class="img-fluid">
+        <img src="assets/images/facility1.webp" alt="Gym Facility Image" class="img-fluid" loading="lazy">
       </div>
     </div>
   </main>

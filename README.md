@@ -66,12 +66,12 @@ Manual testing was performed across multiple devices (desktop, mobile) and web b
 
 | Test Case ID | Description | Expected Result | Pass/Fail | Comments |
 |---|---|---|---|---|
-| TC-01 | Access the home page (index.html) | The home page should load successfully and display the gym's name ("Code Gym"). | Pass/Fail | Verify basic functionality and content. |
-| TC-02 | Navigate to the "Classes" page (classes.html)  | Clicking the "Classes" navigation link should lead to the classes page. | Pass/Fail | Confirm navigation functionality between pages. |
-| TC-03 | Navigate to the "Contact" page (contact.html) | Clicking the "Contact" navigation link should lead to the contact page. | Pass/Fail | Confirm navigation functionality between pages. |
-| TC-04 | Navigate to the "Gallery" page (gallery.html) | Clicking the "Gallery" navigation link should lead to the gallery page. | Pass/Fail | Confirm navigation functionality between pages. |
-| TC-05 | Submit a contact form | Filling and submitting the contact form should successfully submit the data (without actual functionality of sending emails). | Pass/Fail | Verify form functionality and basic validation (e.g., required fields). |
-| TC-06 | Test broken links | Clicking a broken link should display a user-friendly error page (error.html). | Pass/Fail | Ensure proper handling of non-existent links. |
+| TC-01 | Access the home page (index.html) | The home page should load successfully and display the gym's name ("Code Gym"). | Pass | Passes after correcting 404.html page name. |
+| TC-02 | Navigate to the "Classes" page (classes.html)  | Clicking the "Classes" navigation link should lead to the classes page. | Pass | Confirm navigation functionality between pages. |
+| TC-03 | Navigate to the "Contact" page (contact.html) | Clicking the "Contact" navigation link should lead to the contact page. | Pass | Confirm navigation functionality between pages. |
+| TC-04 | Navigate to the "Gallery" page (gallery.html) | Clicking the "Gallery" navigation link should lead to the gallery page. | Pass | Confirm navigation functionality between pages. |
+| TC-05 | Submit a contact form | Filling and submitting the contact form should successfully submit the data (without actual functionality of sending emails). | Pass | Works and posts form to CodeInst page. |
+| TC-06 | Test broken links | Clicking a broken link should display a user-friendly error page (error.html). | Pass | Works and show error page after correcting file name. |
 
 Screenshots from testing:
 ![Home Page Screenshot](screenshots/homepage.png)
@@ -80,10 +80,10 @@ Screenshots from testing:
 
 | Test Case ID | Description | Expected Result | Pass/Fail | Comments |
 |---|---|---|---|---|
-| TC-07 | Mobile Responsiveness | The website should display correctly and be usable across various screen sizes (desktop, mobile). | Pass/Fail | Verify website layout adapts to different devices. |
-| TC-08 | Page Loading Speed | Pages should load reasonably fast for a good user experience. | Pass/Fail | Perform a basic speed test using online tools (subjective assessment). |
-| TC-09 | Clear Navigation | The navigation menu should be clear and easy to understand, allowing users to find desired information efficiently. | Pass/Fail | Review navigation structure and labeling for clarity. |
-| TC-10 | Image Quality | Images used throughout the website should be high-resolution and visually appealing. | Pass/Fail |  Subjective assessment of image quality and relevance. |
+| TC-07 | Mobile Responsiveness | The website should display correctly and be usable across various screen sizes (desktop, mobile). | Pass  | initial slow load due to large images. |
+| TC-08 | Page Loading Speed | Pages should load reasonably fast for a good user experience. | Pass  | initial slow load due to large images (subjective assessment). |
+| TC-09 | Clear Navigation | The navigation menu should be clear and easy to understand, allowing users to find desired information efficiently. | Pass | Easy and clear navigation. |
+| TC-10 | Image Quality | Images used throughout the website should be high-resolution and visually appealing. | Pass |  Subjective assessment of image quality and relevance. |
 
 ## Code Validation
 
@@ -94,14 +94,29 @@ The HTML code was validated using the [W3C Markup Validation Service](https://va
 
 **Proof of validation**:
 
-![HTML Validation Screenshot](images/html-validation.png)
+![HTML Validation Page1](images/html-validation1.png)
+
+![HTML Validation Page2](images/html-validation2.png)
+
+![HTML Validation Page3](images/html-validation3.png)
 
 ### CSS Validation
 The CSS code was validated using the [W3C CSS Validation Service (Jigsaw)](https://jigsaw.w3.org/css-validator/). The stylesheet passed with no errors or warnings.
 
 **Proof of validation**:
 
-![CSS Validation Screenshot](images/css-validation.png)
+![CSS Validation Screenshot](images/css_validation.png)
+
+### Lighthouse
+Page load times initially quite slow because of images sizes:
+
+![Lighthouse Validation Screenshot](images/lighthouse_initial1.png)
+    ![Lighthouse Validation Screenshot](images/lighthouse_corrected1.png)
+![Lighthouse Validation Screenshot](images/lighthouse_initial2.png)
+![Lighthouse Validation Screenshot](images/lighthouse_initial3.png)
+
+**Correction Actions**
+Added preconnect and dns-prefect to the required origin sites
 
 
 **Pass/Fail Criteria:**
