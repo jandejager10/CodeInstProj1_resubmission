@@ -3,7 +3,7 @@ Resubmission of Milestone Project 1
 
 # Code Gym Website
 
-![Layout Image](https://jandejager10.github.io/CodeInstProj1_resubmission/blob/main/assets/images/wireframe.png)
+![Layout Image](https://github.com/jandejager10/CodeInstProj1_resubmission/blob/main/assets/images/wireframe.png)
 Mockup with [amiresponsive](https://ui.dev/amiresponsive)
 
 ## Project Overview
