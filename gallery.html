@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Code Gym! Supportive and Motivating">
-    <meta name="keywords" content="Gym, Excercise, Fun, Supportive, Motivating">
-    <meta name="author" content="Jan de Jager">
-    <title>Code Gym - Your Fitness Destination</title>
-    <!-- Preconnect & dns-prefetch for Bootstrap and other external resources -->
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="dns-prefetch" href="https://kit.fontawesome.com">
-    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    
-    <!-- Preload for images and stylesheets -->
-    <link rel="preload" href="assets/images/hero-banner.webp" as="image">
-    <link rel="preload" href="assets/css/style.css" as="style">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Code Gym! Supportive and Motivating">
+  <meta name="keywords" content="Gym, Excercise, Fun, Supportive, Motivating">
+  <meta name="author" content="Jan de Jager">
+  <title>Code Gym - Your Fitness Destination</title>
+  <!-- Preconnect & dns-prefetch for Bootstrap and other external resources -->
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://kit.fontawesome.com">
+  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   
-  
-    <!-- Stylesheets and Scripts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/919d7ae42a.js" async crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+  <!-- Preload for images and stylesheets -->
+  <link rel="preload" href="assets/images/hero-banner.webp" as="image">
+  <link rel="preload" href="assets/css/style.css" as="style">
+
+
+  <!-- Stylesheets and Scripts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://kit.fontawesome.com/919d7ae42a.js" async crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
   
   <body>
     <header class="container">
@@ -63,47 +64,65 @@
     </header>
 
   <main class="container">
-
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to Our Gallery</h1>
+        <p>Explore the vibrant community at Code Gym!</p>
+      </div>
+    </div>
     <h2>Gallery</h2>
-
     <section class="meet-the-team mb-5">
       <h3>Meet the Team</h3>
-      <div class="row">
-        <div class="col-md-3 mb-3">
-          <img src="assets/images/instructor1.webp" alt="Instructor Jeff" class="img-fluid rounded">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="assets/images/instructor1.webp" alt="Instructor Jeff - Personal Trainer" class="img-fluid rounded">
+          <h4>Instructor Jeff</h4>
+          <p>Personal Trainer</p>
         </div>
-        <div class="col-md-3 mb-3">
-          <img src="assets/images/instructor2.webp" alt="Instructor Bri" class="img-fluid rounded">
+        <div class="grid-item">
+          <img src="assets/images/instructor2.webp" alt="Instructor Bri - Yoga Instructor" class="img-fluid rounded">
+          <h4>Instructor Bri</h4>
+          <p>Yoga Instructor</p>
         </div>
-        <div class="col-md-3 mb-3">
-          <img src="assets/images/instructor3.webp" alt="Instructor Sandy" class="img-fluid rounded">
+        <div class="grid-item">
+          <img src="assets/images/instructor3.webp" alt="Instructor Sandy - Fitness Coach" class="img-fluid rounded">
+          <h4>Instructor Sandy</h4>
+          <p>Fitness Coach</p>
         </div>
-        <div class="col-md-3 mb-3">
-          <img src="assets/images/instructor4.webp" alt="Instructor Alex" class="img-fluid rounded">
+        <div class="grid-item">
+          <img src="assets/images/instructor4.webp" alt="Instructor Alex - Strength Trainer" class="img-fluid rounded">
+          <h4>Instructor Alex</h4>
+          <p>Strength Trainer</p>
         </div>
       </div>
     </section>
-
-    <section class="gallery-grid row">
-      <h3>Check out the Facilities</h3>
-      <div class="col-md-3 mb-3">
-        <img src="assets/images/gymimage1.webp" alt="Gym Image" class="img-fluid rounded">
-      </div>
-      <div class="col-md-3 mb-3">
-        <img src="assets/images/equipment1.webp" alt="Equipment Image" class="img-fluid rounded">
-      </div>
-      <div class="col-md-3 mb-3">
-        <img src="assets/images/activity1.webp" alt="Activity Image" class="img-fluid rounded">
-      </div>
-      <div class="col-md-3 mb-3">
-        <img src="assets/images/cardio1.webp" alt="Cardio Baby" class="img-fluid rounded">
-      </div>
+      <section class="gallery-grid">
+        <h3>Check out the Facilities</h3>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="assets/images/gymimage1.webp" alt="Gym Image" class="img-fluid rounded">
+            <h4>State of the Art Gym</h4>
+            <p>Experience the best equipment</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/images/equipment1.webp" alt="Equipment Image" class="img-fluid rounded">
+            <h4>Top-notch Equipment</h4>
+            <p>For all your fitness needs</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/images/activity1.webp" alt="Activity Image" class="img-fluid rounded">
+            <h4>Diverse Activities</h4>
+            <p>Join our fun and engaging classes</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/images/cardio1.webp" alt="Cardio Equipment" class="img-fluid rounded">
+            <h4>Cardio Zone</h4>
+            <p>Boost your endurance</p>
+          </div>
+        </div>
       </section>
-
   </main>
-    
   <footer class="container text-center py-3">
-
     <div>
       <span style="font-weight: bold;">Phone: </span>
       <span>012 345 678 910</span>
@@ -112,19 +131,14 @@
       <span style="font-weight: bold;">Email: </span>
       <span>codegym-info@example.com</span>
     </div>
-
     <div>
       <a href="https://x.com/home" target="_blank"><i class="fab fa-x-twitter"></i></a>
       <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
-
 <!-- Copyright -->
 <div>
-    <p>
-      &copy; Code Gym 2024 | CodeInstitute | Project 1-resubmit | All rights reserved.
-    </p>
+    <p>&copy; Code Gym 2024 | CodeInstitute | Project 1-resubmit | All rights reserved.</p>
 </div>
   </footer>
-
   </body>
 </html>
